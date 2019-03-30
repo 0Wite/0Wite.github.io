@@ -8,9 +8,13 @@ body {
 h1 {
   font-size: 2rem;
   font-family: serif;
-  color: #0bd;
+  color: #3aacad;
 }
 h2 {
+  font-family: font-family: "游ゴシック体", "Yu Gothic", Yu Gothic, sans-serif;
+  color: #0bd;
+}
+h3 {
   font-family: font-family: "游ゴシック体", "Yu Gothic", Yu Gothic, sans-serif;
   font-size: 20px;
 }
