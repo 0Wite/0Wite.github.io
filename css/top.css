@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .btn-text-3d {
+  text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 37px;
