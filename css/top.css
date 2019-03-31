@@ -1,7 +1,5 @@
 @charset "UTF-8";
-title {
-  font-size: 5rem;
-}
+
 html {
   font-size: 100%;
 }
@@ -11,7 +9,7 @@ body {
   background-size: cover;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: serif;
   color: #3aacad;
   border-style: double dotted solid ridge;
