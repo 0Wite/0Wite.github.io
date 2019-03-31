@@ -1,4 +1,7 @@
 @charset "UTF-8";
+title {
+  font-size: 3rem;
+}
 html {
   font-size: 100%;
 }
