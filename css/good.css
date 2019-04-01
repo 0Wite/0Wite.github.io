@@ -31,33 +31,5 @@ p {
   background-color: #8490c8;
 }
 .cp_link {
-	display: inline-block;
-	perspective: 1000px;
-	perspective-origin: 50% 50%;
-	vertical-align: bottom;
-	overflow: hidden;
-}
-.cp_link span {
-	display: inline-block;
-	position: relative;
-	padding: 0.1em 0.3em;
-	transition: .4s;
-	transform-origin: 50% 0%;
-	transform-style: preserve-3d;
-}
-.cp_link span:after {
-	display: inline-block;
-	position: absolute;
-	padding: 0.1em 0.3em;
-	left: 0;
-	top: 0;
-	content: attr(data-text);
-	color: #fff;
-	background-color: #00ACC1;
-	transform-origin: 50% 0%;
-	transform: translate3d(0, 105%, 0) rotateX(-90deg);
-}
-.cp_link:hover span {
-	background-color: #00ACC1;
-	transform: translate3d(0, 0, -30px) rotateX(90deg);
+  color: #008000
 }
