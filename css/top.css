@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+.bt {
+  text-algin: center;
+}
 .btn-text-3d {
-  text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 37px;
