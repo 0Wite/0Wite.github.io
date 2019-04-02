@@ -1,8 +1,8 @@
 html {
   font-size: 100%;
+  background-color: #ffffff
 }
 body {
-  background-image: url(img/fine-day.jpg);
   background-color: #000000;
   background-size: cover;
 }
