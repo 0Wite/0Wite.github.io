@@ -79,6 +79,14 @@ img {
 #home .page-title {
     text-transform: none;
 }
+#server {
+    background-image: url(img/sarava-server.png);
+    height: 270px;
+    margin^bottom: 40px;
+}
+#server .page-title {
+    text-align: center;
+}
 footer {
     background: #432;
     text-align: center;
