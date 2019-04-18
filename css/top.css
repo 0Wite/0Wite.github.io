@@ -81,7 +81,7 @@ img {
 }
 #server {
     background-image: url(img/sarava-server.png);
-    height: 270px;
+    height: 400px;
     <!-- margin-bottom: 40px; -->
 }
 #server .page-title {
