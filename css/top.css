@@ -82,7 +82,7 @@ img {
 #server {
     background-image: url(img/sarava-server.png);
     height: 270px;
-    margin^bottom: 40px;
+    <!-- margin-bottom: 40px; -->
 }
 #server .page-title {
     text-align: center;
@@ -91,7 +91,7 @@ footer {
     background: #432;
     text-align: center;
     padding: 26px 0;
-    margin-top: 50px;
+    <!-- margin-top: 50px; -->
 }
 footer p {
     color: #fff;
