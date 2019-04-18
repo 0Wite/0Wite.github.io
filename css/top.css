@@ -72,3 +72,10 @@ img {
     background-position: center top;
     background-repeat: no-repeat;
 }
+#home {
+    background-image: url(img/top-img.png);
+    min-height: 100vh;
+}
+#home .page-title {
+    text-transform: none;
+}
