@@ -1,48 +1,44 @@
 @charset "UTF-8";
 
-.bt {
-  text-align: center;
-}
-.btn-text-3d {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 37px;
-  color: #FF0000;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
-}
-.btn-text-3d:active {
-  top: 4px;
-  text-shadow: none;
-}
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 body {
-  background-image: url(img/fine-day.jpg);
-  background-color: #CECEF6;
-  background-size: cover;
+    font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif; line-height: 1.7;
+    color: #432;
 }
-h1 {
-  font-size: 3rem;
-  font-family: serif;
-  color: #3aacad;
-  border-style: double dotted solid ridge;
-  text-align: center;
+a {
+    text-decoration: none;
 }
-h2 {
-  font-family: font-family: "游ゴシック体", "Yu Gothic", Yu Gothic, sans-serif;
-  color: #8f64ab;
-  text-align: center;
+img {
+    max-width: 100%;
 }
-h3 {
-  font-family: font-family: "游ゴシック体", "Yu Gothic", Yu Gothic, sans-serif;
-  font-size: 20px;
-  text-align: center;
+.logo {
+    width: 210px;
+    margin-top: 14px;
 }
-p {
-  text-align: justify;
-  font-size: 15px;
-  font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gthic Pro", sans-serif;
-  color: #702c91;
-  background-color: #8490c8;
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nva a:hover {
+    color: #0bd;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
 }
