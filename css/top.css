@@ -42,3 +42,20 @@ img {
     margin: 0 auto;
     padding: 0 4%;
 }
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-redius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
