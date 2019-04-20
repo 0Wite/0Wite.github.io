@@ -42,6 +42,9 @@ img {
     margin: 0 auto;
     padding: 0 4%;
 }
+.wrapepr p {
+    color: #0c4da2;
+}
 .home-content {
     text-align: center;
     margin-top: 6%;
