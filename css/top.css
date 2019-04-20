@@ -97,3 +97,5 @@ footer p {
     color: #fff;
     font-size: 0.875rem;
 }
+@media (max-width:767px) {
+}
