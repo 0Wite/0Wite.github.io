@@ -117,3 +117,14 @@ footer p {
         align-items: center;
     }
 }
+article {
+    width: 74%;
+}
+aside {
+    width: 22%;
+}
+.server-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
