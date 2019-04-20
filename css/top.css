@@ -42,9 +42,6 @@ img {
     margin: 0 auto;
     padding: 0 4%;
 }
-.wrapepr p {
-    color: #0c4da2;
-}
 .home-content {
     text-align: center;
     margin-top: 6%;
@@ -52,6 +49,7 @@ img {
 .home-content p {
     font-size: 1.125rem;
     margin: 10px 0 30px;
+    color: aqua;
 }
 .page-title {
     font-size: 5rem;
