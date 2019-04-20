@@ -74,7 +74,6 @@ img {
 }
 #home {
     background-image: url(img/top-img.png);
-    background-size: cover
     min-height: 100vh;
 }
 #home .page-title {
