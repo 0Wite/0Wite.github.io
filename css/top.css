@@ -128,3 +128,8 @@ aside {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
