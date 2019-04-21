@@ -124,6 +124,12 @@ footer p {
 article {
     width: 74%;
 }
+article img {
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
 aside {
     width: 22%;
 }
