@@ -1,0 +1,2 @@
+# kikazei.github.io
+HEHEHEHE
