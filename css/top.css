@@ -143,3 +143,6 @@ aside {
     padding-top: 4px;
     margin-bottom: 40px;
 }
+.post-info p {
+    color: #000;
+}
