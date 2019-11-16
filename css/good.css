@@ -1,6 +1,6 @@
 html {
   font-size: 100%;
-  background-color: #ffffff;
+  background-color: #808080;
 }
 body {
   background-color: #808080;
@@ -27,7 +27,7 @@ p {
   font-size: 15px;
   font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gthic Pro", sans-serif;
   color: #000000;
-  background-color: #9370DB;
+  background-color: #D3D3D3;
 }
 link {
   color: #008000
