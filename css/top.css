@@ -2,4 +2,9 @@
 name {
   font-size: 40px;
 }
-.home-content{text-align:center}
+.home-content{
+  text-align: center;
+}
+body{
+  background: #2E2E2E;
+}
