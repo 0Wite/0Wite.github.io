@@ -11,14 +11,14 @@
 	
     </head>
     <body onload="print">
-        <name><div id="name">Carauere</div></name>
+        <name><div id="nam">Carauere</div></name>
 	<script>
 	var i=0;
 	var txt="Carauere";
 	var printString;
  
 	function print() {
-	document.getElementById("name").innerText=txt.substring(0,i++);
+	document.getElementById("nam").innerText=txt.substring(0,i++);
 	if(i<=txt.length) {
  		setTimeout("print()",300);
  		}
