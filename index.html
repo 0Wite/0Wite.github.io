@@ -9,10 +9,20 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/top.css">
 	<script type="text/javascript" src="js/in.js"></script>
+	<script>
+	var i=0;
+	var printString;
+	var moji="Carauere";
+ 
+	function print() {
+	document.getElementById("text").innerText=txt.substring(0,i++);
+	if(i<=txt.length) {
+ 		setTimeout("print()",300);
+ 		}
+	}
+</script>
     </head>
-    <body>
-        <div class="home-content">
-		<name id="top">Carauere</name>
-        </div>
+    <body onload="print">
+        <div id="name"></div>
     </body>
 </html>
