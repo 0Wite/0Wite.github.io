@@ -2,6 +2,33 @@
 <html lang="ja">
     <head>
         <title>Carauere</title>
+        <script type="text/javascript">
+        var msg = 'Carauere'; 
+        var speed = 200; 
+        var flag = 0;
+
+        var count = 0;
+
+        function disp(){
+
+	        var type = msg.substring(0, count);
+
+	        document.form1.field1.value = type;
+
+	        count ++;
+
+	        var rep = setTimeout("disp()", speed);
+
+	        if(count > msg.length){
+
+		        if(flag == 1){ clearTimeout(rep); }
+		        else{ count = 0; }
+
+	        }
+
+        }
+
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Carauereホームページ">
@@ -11,7 +38,10 @@
     </head>
     <body>
         <div class="home-content">
-            <name>Carauere</name><br>
+            <body onLoad="disp()">
+
+            <form action="#" name="form1">
+            <input type="text" name="field1" size="30">
         </div>
     </body>
 </html>
