@@ -9,6 +9,9 @@
   #titi {
     position:absolute; top:320px; left:20px;
   }
+  fooo{
+    position: absolute; top: 1300px;
+  }
 }
 name {
   font-size: 60px;
@@ -36,6 +39,9 @@ p {
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
 top{
   text-align: center;
+}
+fooo{
+  position: absolute; top: 1500px;
 }
 #imgg{
   margin-top: 30px;
