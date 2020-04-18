@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@media screen and (min-width: 767px) {
+  #sss {
+    position: absolute; top: 100px; left:250px;
+  }
+  #imgg {
+    position: absolute; top: 80px; left:48px;
+  }
+  #titi {
+    position:absolute; top:320px; left:20px;
+  }
+}
 name {
   font-size: 60px;
   text-align: center;
@@ -18,5 +29,19 @@ ul {
 }
 p {
   margin-bottom: 20px;
-  amrgin-left: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+top{
+  text-align: center;
+}
+#imgg{
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+#titi {
+  position:absolute; top:450px; left:20px;
+}
 }
