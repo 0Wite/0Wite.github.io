@@ -12,9 +12,6 @@
   #kei {
     position: absolute; top:12px; left: 45px;
   }
-  fooo{
-    position: absolute; top: 1300px;
-  }
   .btn{
     border: 1px solid silver;
     border-radius: 5px;
@@ -65,9 +62,6 @@ p {
   #sss{
     text-align: center;
     width: auto;
-  }
-  fooo{
-    position: absolute; top: 1500px;
   }
   body,html {
     width: 100%;
