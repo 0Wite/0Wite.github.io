@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 600px) {
   #sss {
     position: absolute; top: 100px; left:250px;
   }
@@ -9,8 +9,20 @@
   #titi {
     position:absolute; top:320px; left:20px;
   }
+  #kei {
+    position: absolute; top:12px; left: 45px;
+  }
   fooo{
     position: absolute; top: 1300px;
+  }
+  .btn{
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 150px;
   }
 }
 name {
@@ -20,6 +32,10 @@ name {
 body{
   background: #2E2E2E;
   color: #F2F2F2;
+  margin: 0;
+}
+html {
+  margin: 0;
 }
 
 h2 {
@@ -36,20 +52,38 @@ p {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
-top{
-  text-align: center;
-}
-fooo{
-  position: absolute; top: 1500px;
-}
-#imgg{
-  margin-top: 30px;
-  margin-bottom: 35px;
-}
-#titi {
-  position:absolute; top:450px; left:20px;
-}
+@media screen and (max-width: 600px) { /*ウィンドウ幅が最大600pxまでの場合に適用*/
+  .btn{
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 80px;
+  }
+  #sss{
+    text-align: center;
+    width: auto;
+  }
+  fooo{
+    position: absolute; top: 1500px;
+  }
+  body,html {
+    width: 100%;
+  }
+  #kei {
+    position: absolute; top: 140px; left:320px;
+  }
+  #imgg{
+    text-align: center;
+  }
+  #titi {
+    position:absolute; top:450px; left:20px;
+  }
+  #nam {
+    text-align: center;
+  }
 }
 ss {
   font-size: 20px;
