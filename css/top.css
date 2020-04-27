@@ -66,9 +66,9 @@ p {
   body,html {
     width: 100%;
   }
-  /*#kei {
-    position: absolute; top: 140px; left:320px;
-  }*/
+  #kei {
+    position: absolute; top: 140px; left:300px;
+  }
   #imgg{
     text-align: center;
   }
