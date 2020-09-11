@@ -1,0 +1,9 @@
+[
+  {
+    "member": [
+      { "user-id" : 0000000011, "name" : "Nozero", "zip" : null, "country" : null },
+      { "user-id" : 0000000012, "name" : "Noname", "zip" : null, "country" : null },
+      { "user-id" : 0000000013, "name" : null, "zip" : null, "country" : null }
+    ]
+  }
+]
