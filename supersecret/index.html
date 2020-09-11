@@ -18,7 +18,9 @@
             var nodes = docelem.getElementsByTagName("Firstname");
             var nodes2 = docelem.getElementsByTagName("Lastname");
             for (i = 0; i < nodes.length; i++) {
+              elem.innerHTML += "---------------<br/>";
               elem.innerHTML += "名前 :" + nodes[i].textContent + nodes2[i].textContent + "<br/>";
+              elem.innerHTML += "---------------<br/>";
             }
             elem.innerHTML += "----------<br/>";
           } else {
