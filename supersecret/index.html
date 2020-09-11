@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+
+  <script type="text/javascript">
+    function getData() {
+      var xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4) {
+          if (xmlhttp.status == 200) {
+            var elem = document.getElementById("output");
+
+            elem.innerHTML += "----- getElementsByTagName -----<br/>";
+            var docelem = xmlhttp.responseXML.documentElement;
+            var nodes = docelem.getElementsByTagName("Firstname");
+            for (i = 0; i < nodes.length; i++) {
+              elem.innerHTML += nodes[i].tagName + ":" + nodes[i].textContent + "<br/>";
+            }
+            elem.innerHTML += "----------<br/>";
+          } else {
+            alert("status = " + xmlhttp.status);
+          }
+        }
+      }
+      xmlhttp.open("GET", "./main.xml");
+      xmlhttp.send();
+    }
+  </script>
+</head>
+<body>
+  <input id="Button_Get" type="button" value="取得" onclick="getData();" />
+  <div>受信情報</div>
+  <div id="output"></div>
+</body>
+</html>

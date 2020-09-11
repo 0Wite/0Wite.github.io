@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml-stylesheet type="text/xsl" href="axsl.xsl"?>
+<main>
+    <person number="0000000000">
+        <Firstname>Number</Firstname>
+        <Lastname>Zero</Lastname>
+        <zip>000-0000</zip>
+        <country>Japan</country>
+        <description></description>
+    </person>
+    <person number="0000000001">
+        <Firstname>No</Firstname>
+        <Lastname>Name</Lastname>
+        <zip>000-0001</zip>
+        <country>Japan</country>
+        <description></description>
+    </person>
+</main>
