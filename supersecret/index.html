@@ -13,7 +13,7 @@
           if (xmlhttp.status == 200) {
             var elem = document.getElementById("output");
 
-            elem.innerHTML += "<br/>";
+            elem.innerHTML += "情報<br/>";
             var docelem = xmlhttp.responseXML.documentElement;
             var nodes = docelem.getElementsByTagName("Firstname");
             var nodes2 = docelem.getElementsByTagName("Lastname");
@@ -32,6 +32,7 @@
       xmlhttp.send();
     }
     getData();
+    <div id=output></div>
   </script>
 </head>
 </html>
