@@ -13,11 +13,12 @@
           if (xmlhttp.status == 200) {
             var elem = document.getElementById("output");
 
-            elem.innerHTML += "----- getElementsByTagName -----<br/>";
+            elem.innerHTML += "情報<br/>";
             var docelem = xmlhttp.responseXML.documentElement;
             var nodes = docelem.getElementsByTagName("Firstname");
+            var nodes2 = docelem.getElementsByTagName("Lastname");
             for (i = 0; i < nodes.length; i++) {
-              elem.innerHTML += nodes[i].tagName + ":" + nodes[i].textContent + "<br/>";
+              elem.innerHTML += "名前 :" + nodes[i].textContent + nodes2[i].textContent + "<br/>";
             }
             elem.innerHTML += "----------<br/>";
           } else {
@@ -25,7 +26,7 @@
           }
         }
       }
-      xmlhttp.open("GET", "./main.xml");
+      xmlhttp.open("GET", "./sub.xml");
       xmlhttp.send();
     }
   </script>
