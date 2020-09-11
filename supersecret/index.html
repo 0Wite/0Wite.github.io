@@ -13,7 +13,7 @@
           if (xmlhttp.status == 200) {
             var elem = document.getElementById("output");
 
-            elem.innerHTML += "情報<br/>";
+            elem.innerHTML += "<br/>";
             var docelem = xmlhttp.responseXML.documentElement;
             var nodes = docelem.getElementsByTagName("Firstname");
             var nodes2 = docelem.getElementsByTagName("Lastname");
