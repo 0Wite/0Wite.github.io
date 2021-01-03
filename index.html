@@ -32,7 +32,7 @@ iframe {margin-left: 25px;background-color:white;}
 </div>
 </body>
 <script type="text/javascript">
-let name = ["666"];
+let name = ["666","731"];
 console.log(name[0])
 window.onload = function(){
 setInterval("random()", 75)
@@ -42,7 +42,7 @@ var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 document.getElementById('help').style.backgroundColor = randomColor
 }
 var contentBlock = document.getElementById('textttt');
-for(i=0;i<=0;i++){
+for(i=0;i<=1;i++){
 contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><iframe noResize src=text/'+name[i]+".txt "+'frameborder="0" scrolling="no"></iframe><br><br>');
 }
 </script>
