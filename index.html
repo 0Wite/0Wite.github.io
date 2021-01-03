@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja"class="lol">
 <head>
 <meta charset="UTF-8">
 <title>0Wite</title>
 <style type="text/css">
 *{margin: 0;padding: 0;}
+.lol{height:100%;}
+#help{height:100%;}
+.frame{height:100%;}
+.main {margin-left:100px;margin-right:100px;background-color:#1C1C1C;color: White;height:calc(100%-30px);}
 h2 {margin-left: 25px;}
 h1 {margin-left:10px;}
-html{height: 100%;}
-body {height: 100%;background-color: randomColor;}
-a {text-decoration: none;color: #4b4b4b;}.main {margin-left: 100px;margin-right: 100px;padding-top:30px;background-color: #1C1C1C;color: White;}
+a {text-decoration: none;color: #4b4b4b;}
 hr{margin-top:15px;margin-bottom:15px;}
 header{width: 100%;padding:30px 0% 15px;background-color: black;}
 h0{font-size:60px;}
 h3{margin-left: 30px;}
 iframe {margin-left: 25px;background-color:white;}
-.help{height:100%;}
 </style>
 </head>
 <header>
@@ -23,12 +24,10 @@ iframe {margin-left: 25px;background-color:white;}
 </header>
 <body id="help">
 <div class="main">
-<tete>
 <h1>都市伝説</h1>
 <hr>
 <h2>都市伝説</h2><br>
 <div id="textttt"></div>
-</tete>
 </div>
 </body>
 <script type="text/javascript">
@@ -43,7 +42,7 @@ document.getElementById('help').style.backgroundColor = randomColor
 }
 var contentBlock = document.getElementById('textttt');
 for(i=0;i<=1;i++){
-contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><iframe noResize src=text/'+name[i]+".txt "+'frameborder="0" scrolling="no"></iframe><br><br>');
+contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><iframe noResize src=text/'+name[i]+".txt "+'frameborder="0" class="frame" scrolling="no"></iframe><br><br>');
 }
 </script>
 </html>
