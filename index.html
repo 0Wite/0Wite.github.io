@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <title>0Wite</title>
 <style type="text/css">
-*{margin: 0;padding: 0;}
-.lol{height:100%;}
-#help{height:100%;}
-.frame{height:100%;}
-.main {margin-left:100px;margin-right:100px;background-color:#1C1C1C;color: White;height:calc(100%-30px);}
+*{margin: 0 auto;padding: 0;}
+.main {background-color:#1C1C1C;color: White;margin-left:100px;margin-right:100px;}
+#textttt{}
 h2 {margin-left: 25px;}
 h1 {margin-left:10px;}
+html,body{}
 a {text-decoration: none;color: #4b4b4b;}
 hr{margin-top:15px;margin-bottom:15px;}
 header{width: 100%;padding:30px 0% 15px;background-color: black;}
@@ -41,9 +40,8 @@ var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 document.getElementById('help').style.backgroundColor = randomColor
 }
 var contentBlock = document.getElementById('textttt');
-for(i=0;i<=1;i++){
+for(i=0;i<=9;i++){
 contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><iframe noResize src=text/'+name[i]+".txt "+'frameborder="0" class="frame" scrolling="no"></iframe><br><br>');
 }
 </script>
 </html>
-
