@@ -28,11 +28,31 @@ p{margin-left:20px;margin-right:20px;margin-bottom:20px;}
 <hr>
 <center><h2>注意事項(事前にお読みください)</h2></center><hr>
 <p>　ここに書かれている内容は、創作であったり、事実とは異なる内容である場合があります。主にネットやテレビなどで取り扱われている噂、都市伝説なので真偽はご自分でお定めください。また、文字数の関係で、ここに書かれている内容は文章中ですべてのことに言及できていない可能性があるため、気になった方はどうぞ自分で調べてみてください。</p><hr><br>
+<center><input type="text" id="message"></center>
+<center><input type="button" onclick="showMessage()" value="送信"></center>
 <div id="textttt"></div>
 </div>
 </body>
 <script type="text/javascript">
-let name = ["666","731","rainman","きさらぎ駅","犬鳴村"];
+var contentBlock = document.getElementById('textttt');
+const showMessage = () => {
+      const textbox = document.getElementById("message");
+      const inputValue = textbox.value;
+		if(name.includes(inputValue)||inputValue==""){
+			document.getElementById('textttt').textContent = '';
+			contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+inputValue+'</h3><center><iframe noResize src=./text/'+inputValue+".txt "+'frameborder="0" class="frame" scrolling="no"></iframe></center><br><br>');
+			if(inputValue==""){
+				document.getElementById('textttt').textContent = '';
+				for(i=0;i<=name.length-1;i++){
+	contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><center><iframe noResize src=./text/'+name[i]+".txt "+'frameborder="0" class="frame" scrolling="no"></iframe></center><br><br>');
+				}
+			}
+		} else {
+		document.getElementById('textttt').textContent = '';
+		contentBlock.insertAdjacentHTML('afterbegin', '<center><p>見つかりませんでした</p></center>');
+		}
+    }
+let name = ["666","731","rainman","きさらぎ駅","犬鳴村","フリーメイソン"];
 console.log(name[0])
 window.onload = function(){
 setInterval("random()", 75)
@@ -41,9 +61,8 @@ function random(){
 var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 document.getElementById('help').style.backgroundColor = randomColor
 }
-var contentBlock = document.getElementById('textttt');
-for(i=0;i<=9;i++){
-contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><center><iframe noResize src=text/'+name[i]+".txt "+'frameborder="0" class="frame" scrolling="no"></iframe></center><br><br>');
+for(i=0;i<=name.length-1;i++){
+contentBlock.insertAdjacentHTML('afterbegin', '<h3>'+name[i]+'</h3><center><iframe noResize src=./text/'+name[i]+".txt "+'frameborder="0" class="frame" scrolling="no"></iframe></center><br><br>');
 }
 </script>
 </html>
