@@ -5,7 +5,9 @@
 <title>勉強</title>
 <script>
 var img;
-
+const fs = require('fs');
+let text = fs.readFileSync("../file");
+console.log(text);
 function sampleimg(){
   img = document.getElementById("image_file");
   img.src = "../images/";
