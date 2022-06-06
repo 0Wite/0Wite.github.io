@@ -10,15 +10,14 @@
 
 <script type="text/javascript">
   var img;
-  
   var imglist = new Array(  
 '2012年 防衛医科大学.jpeg', '2014年 慶應義塾大学.jpeg', '2016年 学習院大学.jpeg', '2018年 関西大学.jpeg', '2019年 福井大学.jpeg', '上級問題精講 数Ⅰ+ A +Ⅱ+ B p26 410番.jpeg', '高2プリント 複素数平面p11 4番.jpeg', '高2プリント 複素数平面p13 2番.jpeg', '高2プリント 複素数平面p14 3番.jpeg', '高2プリント 複素数平面p4 2番.jpeg');
   var selectnum = Math.floor(Math.random() * imglist.length);
 function sampleimg(){
-  /*img = document.getElementById("image_file");
-  img.src = "../images/"+imglist[selectnum];*/
-  var output = "<img src=../images/" + imglist[selectnum] + ">";
-  document.write(output);
+  location.reload()
+  img = document.getElementById("image_file");
+  img.src = "../images/"+imglist[selectnum];
+ 
   
 }
 </script>
@@ -26,6 +25,6 @@ function sampleimg(){
 <body>
   <p>画像の表示</p>
   <input type="button" onclick="sampleimg()" value="切り替え">
-  <!-- <img id="image_file" src=""/> -->
+  <img id="image_file" src=""/>
 </body>
 </html>
