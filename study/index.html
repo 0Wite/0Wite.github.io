@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>勉強</title>
+<script>
+var img;
+
+function sampleimg(){
+  img = document.getElementById("image_file");
+  img.src = "../images/";
+}
+</script>
+</head>
+<body>
+  <p>画像の表示</p>
+  <input type="button" onclick="sampleimg()" value="切り替え">
+  <img id="image_file" src=""/>
+</body>
+</html>
