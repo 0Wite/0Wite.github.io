@@ -1,0 +1,24 @@
+<script src="./js.cookie.js"></script>
+<p>password:
+<input type="form" id="nameText">
+<input type="button" value="送信" id="checkButton">
+<p id="msg"></p>
+<script>
+if(Cookies.get('password'=="password")){
+  msg.innerText = 'ok';
+}
+function butotnClick(){
+  if(nameText.value=="password"){
+    Cookies.set('password', nameText.value, {expires: 30});
+    msg.innerText = 'お名前は' + nameText.value + 'さんですね';
+  }else{
+    msg.innerText = 'パスワードが違います';
+  }
+}
+
+let nameText = document.getElementById('nameText');
+let msg = document.getElementById('msg');
+
+let checkButton = document.getElementById('checkButton');
+checkButton.addEventListener('click', butotnClick);
+</script>
