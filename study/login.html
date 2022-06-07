@@ -4,6 +4,11 @@
 <input type="button" value="送信" id="checkButton">
 <p id="msg"></p>
 <script>
+let nameText = document.getElementById('nameText');
+let msg = document.getElementById('msg');
+
+let checkButton = document.getElementById('checkButton');
+checkButton.addEventListener('click', butotnClick);
 if(Cookies.get('password')=="password"){
   msg.innerText = 'ok';
 }else{
@@ -17,10 +22,4 @@ function butotnClick(){
     msg.innerText = 'パスワードが違います';
   }
 }
-
-let nameText = document.getElementById('nameText');
-let msg = document.getElementById('msg');
-
-let checkButton = document.getElementById('checkButton');
-checkButton.addEventListener('click', butotnClick);
 </script>
