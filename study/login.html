@@ -17,7 +17,7 @@ if(Cookies.get('password')=="password"){
 function butotnClick(){
   if(nameText.value=="password"){
     Cookies.set('password', nameText.value, {expires: 30});
-    msg.innerText = 'お名前は' + nameText.value + 'さんですね';
+    window.location.href = "https://n0zer0.github.io/study/index.html"
   }else{
     msg.innerText = 'パスワードが違います';
   }
