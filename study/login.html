@@ -10,7 +10,7 @@ let msg = document.getElementById('msg');
 let checkButton = document.getElementById('checkButton');
 checkButton.addEventListener('click', butotnClick);
 if(Cookies.get('password')=="password"){
-  msg.innerText = 'ok';
+  window.location.href = "https://n0zer0.github.io/study/index.html"
 }else{
   console.log(Cookies.get('password'));
 }
