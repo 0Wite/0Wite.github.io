@@ -6,6 +6,8 @@
 <script>
 if(Cookies.get('password'=="password")){
   msg.innerText = 'ok';
+}else{
+  console.log(Cookies.get('password'));
 }
 function butotnClick(){
   if(nameText.value=="password"){
